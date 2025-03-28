@@ -1,30 +1,30 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import AnimatedBackground from './AnimatedBackground';
+import HeroBackground from './HeroBackground';
 
 export default function About() {
   const leftRef = useScrollAnimation('left');
   const rightRef = useScrollAnimation('right');
 
   return (
-    <section id="about" className="py-16 relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
-      <AnimatedBackground />
-      <div className="container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="py-16 relative overflow-hidden bg-primary text-white">
+      <HeroBackground />
+      <div className="container relative z-10 px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <div 
             ref={leftRef}
-            className="opacity-0 translate-x-[-50px] transition-all duration-1000 ease-out animate-in:opacity-100 animate-in:translate-x-0"
+            className="opacity-0 translate-x-[-50px] transition-all duration-1000 ease-out animate-in:opacity-100 animate-in:translate-x-0 space-y-4"
           >
-            <h2 className="section-title">About Chesterfield Bariatric Surgery</h2>
-            <p className="text-gray-600 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">About Chesterfield Bariatric Surgery</h2>
+            <p className="text-base md:text-lg text-gray-200">
               Chesterfield Bariatric Surgery has been proudly serving the St. Louis area with 
               comprehensive weight loss solutions for over 15 years. Our board-certified surgeons 
               specialize exclusively in bariatric surgery with a focus on minimally invasive techniques.
             </p>
-            <p className="text-gray-600 mb-4">
+            <p className="text-base md:text-lg text-gray-200">
               As a dedicated weight loss surgery center, we understand the challenges of obesity and 
               provide personalized care to help you achieve lasting weight loss and improved health.
             </p>
-            <p className="text-gray-600 mb-4">
+            <p className="text-base md:text-lg text-gray-200">
               Our team works closely with each patient to develop individualized treatment plans, 
               providing support before, during, and long after your weight loss procedure.
             </p>
@@ -33,7 +33,7 @@ export default function About() {
                 href="https://healow.com/apps/practice/physician-services-consulting-llc-saint-louis-mo-28777?v=2&t=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary"
+                className="inline-block px-6 py-3 bg-accent text-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300"
               >
                 Schedule a Consultation
               </a>
@@ -42,7 +42,7 @@ export default function About() {
           
           <div 
             ref={rightRef}
-            className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md opacity-0 translate-x-[50px] transition-all duration-1000 ease-out animate-in:opacity-100 animate-in:translate-x-0"
+            className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md opacity-0 translate-x-[50px] transition-all duration-1000 ease-out animate-in:opacity-100 animate-in:translate-x-0 mt-8 md:mt-0"
           >
             <div className="mb-6">
               <img 
@@ -54,14 +54,14 @@ export default function About() {
             
             <h3 className="text-2xl font-bold text-primary mb-4">Meet Dr. Deepu Sudhakaran</h3>
             
-            <div className="mb-6">
+            <div className="space-y-4">
               <h4 className="text-xl font-semibold text-primary">Dr. Deepu Sudhakaran, MD, FACS</h4>
-              <p className="text-gray-600 italic mb-2">Board Certified Bariatric Surgeon</p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 italic">Board Certified Bariatric Surgeon</p>
+              <p className="text-gray-600">
                 As a fellowship-trained bariatric surgeon, Dr. Sudhakaran specializes in advanced weight loss 
                 procedures including gastric sleeve, gastric bypass, and revisional bariatric surgery.
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600">
                 After completing his General Surgery residency at the University of Miami, Dr. Sudhakaran pursued 
                 advanced fellowship training in Minimally Invasive and Bariatric Surgery at the Cleveland Clinic Florida.
               </p>
