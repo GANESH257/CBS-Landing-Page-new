@@ -28,7 +28,7 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          
+
           {/* Right Column - Image */}
           <div className="relative h-[400px] md:h-[500px]">
             <img
