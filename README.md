@@ -1,6 +1,6 @@
-# Central Brevard Surgery - Landing Page
+# Chesterfield Bariatric Surgery - Landing Page
 
-A modern, responsive landing page for Central Brevard Surgery designed for marketing campaigns. This page highlights the surgical services, doctors, and patient testimonials.
+A modern, responsive landing page for Chesterfield Bariatric Surgery designed for marketing campaigns. This page highlights the surgical services, doctors, and patient testimonials.
 
 ## Features
 
