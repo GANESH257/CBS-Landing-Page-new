@@ -35,7 +35,7 @@ export default function Appointment({ isFormOpen, setIsFormOpen }) {
                   </svg>
                   <div>
                     <p className="font-medium text-gray-900">Phone</p>
-                    <p className="text-gray-600">(314) 205-6868</p>
+                    <p className="text-gray-600">+1 (314) 500-2424</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
