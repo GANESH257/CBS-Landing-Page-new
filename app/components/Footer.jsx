@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-white border-opacity-20 mt-8 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Chesterfield Bariatric Surgery. All rights reserved.</p>
+          <p>&copy; 2025 Ensemble Digital Labs. All rights reserved.</p>
           <p className="mt-2 text-sm">Serving St. Louis County, St. Charles County, and surrounding areas in Missouri</p>
         </div>
       </div>
