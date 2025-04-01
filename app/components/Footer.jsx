@@ -36,17 +36,6 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="text-center">
-          <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p className="mb-2">Location 1:</p>
-          <p className="mb-2">16216 Baxter Road, Suite 110</p>
-          <p className="mb-2">Chesterfield, MO 63017</p>
-          <p className="mb-2 mt-2">Location 2:</p>
-          <p className="mb-2">10004 Kennerly Road, Suite 370A</p>
-          <p className="mb-2">Saint Louis, MO 63128</p>
-          <p className="mb-2">Phone: +1 (314) 500-2424</p>
-        </div>
-        
         <div className="border-t border-white border-opacity-20 mt-8 pt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Chesterfield Bariatric Surgery. All rights reserved.</p>
           <p className="mt-2 text-sm">Serving St. Louis County, St. Charles County, and surrounding areas in Missouri</p>
