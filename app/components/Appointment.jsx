@@ -24,9 +24,12 @@ export default function Appointment({ isFormOpen, setIsFormOpen }) {
                   </svg>
                   <div>
                     <p className="font-medium text-gray-900">Address</p>
-                    <p className="text-gray-600">Executive Building</p>
+                    <p className="text-gray-600">Location 1:</p>
                     <p className="text-gray-600">16216 Baxter Road, Suite 110</p>
                     <p className="text-gray-600">Chesterfield, MO 63017</p>
+                    <p className="text-gray-600 mt-2">Location 2:</p>
+                    <p className="text-gray-600">10004 Kennerly Road, Suite 370A</p>
+                    <p className="text-gray-600">Saint Louis, MO 63128</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">

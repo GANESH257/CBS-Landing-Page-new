@@ -5,9 +5,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Chesterfield Bariatric Surgery</h3>
-            <p className="mb-2">222 Clarkson Road</p>
-            <p className="mb-2">Chesterfield, MO 63011</p>
-            <p className="mb-2">Phone: (314) 205-6868</p>
+            <p className="mb-2">Location 1:</p>
+            <p className="mb-2">16216 Baxter Road, Suite 110</p>
+            <p className="mb-2">Chesterfield, MO 63017</p>
+            <p className="mb-2 mt-2">Location 2:</p>
+            <p className="mb-2">10004 Kennerly Road, Suite 370A</p>
+            <p className="mb-2">Saint Louis, MO 63128</p>
+            <p className="mb-2">Phone: +1 (314) 500-2424</p>
             <p className="mb-2">Fax: (314) 205-6869</p>
           </div>
           
@@ -34,9 +38,12 @@ export default function Footer() {
         
         <div className="text-center">
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p className="mb-2">Executive Building</p>
+          <p className="mb-2">Location 1:</p>
           <p className="mb-2">16216 Baxter Road, Suite 110</p>
           <p className="mb-2">Chesterfield, MO 63017</p>
+          <p className="mb-2 mt-2">Location 2:</p>
+          <p className="mb-2">10004 Kennerly Road, Suite 370A</p>
+          <p className="mb-2">Saint Louis, MO 63128</p>
           <p className="mb-2">Phone: +1 (314) 500-2424</p>
         </div>
         
