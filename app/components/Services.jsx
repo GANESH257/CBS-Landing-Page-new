@@ -8,70 +8,81 @@ export default function Services() {
   const services = [
     {
       id: 1,
-      title: "Gastric Sleeve Surgery",
-      description: "A minimally invasive procedure that removes a portion of the stomach to create a smaller, sleeve-shaped stomach, helping you feel fuller faster and reducing hunger hormones.",
-      extendedInfo: "Also known as sleeve gastrectomy, this procedure permanently reduces your stomach size by about 80%. Most patients lose 60-70% of their excess weight within the first year. Recovery is typically quick with most patients returning to work within 1-2 weeks.",
+      title: 'Gastric Sleeve Surgery',
+      description: 'A minimally invasive procedure that removes approximately 80% of the stomach, creating a sleeve-shaped stomach that helps you feel full with less food.',
+      extendedInfo: 'The gastric sleeve surgery is one of the most popular weight loss procedures. It works by reducing the size of your stomach, which helps you eat less and feel full faster. This procedure also removes the part of the stomach that produces the hunger hormone ghrelin, helping to reduce appetite.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
         </svg>
-      ),
+      )
     },
     {
       id: 2,
-      title: "Gastric Bypass Surgery",
-      description: "A surgical procedure that creates a small stomach pouch and reroutes the digestive tract, resulting in significant weight loss through both restriction and malabsorption.",
-      extendedInfo: "Gastric bypass is considered the gold standard in bariatric surgery. It works through two mechanisms: restricting food intake and reducing nutrient absorption. Most patients lose 70-80% of excess weight and experience improvement or resolution of obesity-related conditions like type 2 diabetes.",
+      title: 'Gastric Bypass Surgery',
+      description: 'A comprehensive weight loss solution that creates a small stomach pouch and reroutes the small intestine to reduce calorie absorption.',
+      extendedInfo: 'Gastric bypass surgery is a highly effective weight loss procedure that works in two ways: by reducing the size of your stomach and by bypassing part of your small intestine. This dual mechanism helps you eat less and absorb fewer calories, leading to significant weight loss.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
-      ),
+      )
     },
     {
       id: 3,
-      title: "Revisional Bariatric Surgery",
-      description: "Specialized procedures for patients who have previously undergone weight loss surgery but may need adjustments due to complications or inadequate weight loss results.",
-      extendedInfo: "If your initial weight loss surgery has not provided the expected results or if you're experiencing complications, revisional surgery may help. Our experienced surgeons can convert one type of bariatric procedure to another or correct issues from a previous surgery to improve outcomes.",
+      title: 'Revision Surgery',
+      description: 'Specialized procedures to modify or correct previous weight loss surgeries, helping patients achieve better results.',
+      extendedInfo: 'Revision surgery is designed for patients who have had previous weight loss surgery but need adjustments or improvements. This can include converting one type of surgery to another or repairing complications from previous procedures.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
-      ),
+      )
     },
     {
       id: 4,
-      title: "Non-Surgical Weight Loss",
-      description: "Comprehensive medical weight loss programs including nutritional counseling, behavioral therapy, and medication management for those seeking non-surgical alternatives.",
-      extendedInfo: "For patients who don't qualify for bariatric surgery or prefer non-surgical options, we offer a medically supervised weight loss program. This includes personalized nutrition plans, FDA-approved weight loss medications, lifestyle coaching, and ongoing support to help you achieve sustainable weight loss.",
+      title: 'General Surgery',
+      description: 'General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.',
+      extendedInfo: 'Our general surgery services include procedures for various conditions affecting the digestive system and other parts of the body. We use minimally invasive techniques whenever possible to ensure faster recovery and less discomfort.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
         </svg>
-      ),
+      )
     },
     {
       id: 5,
-      title: "Comprehensive Pre-Op Preparation",
-      description: "Extensive pre-surgery support including nutritional education, psychological evaluation, and medical testing to ensure you're fully prepared for weight loss surgery.",
-      extendedInfo: "Our pre-operative program typically spans 3-6 months and includes consultations with our multidisciplinary team. You'll undergo nutritional counseling, psychological evaluation, fitness assessment, and medical testing. This thorough preparation helps optimize surgical outcomes and establishes healthy habits for long-term success.",
+      title: 'Hernia Repair',
+      description: 'Advanced surgical techniques to repair various types of hernias, including inguinal, umbilical, and incisional hernias.',
+      extendedInfo: 'Hernia repair surgery is performed to fix weakened areas in the abdominal wall where organs or tissue protrude. We use the latest minimally invasive techniques to ensure a quick recovery and minimal discomfort.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4h16M4 8h16M4 12h16M4 16h16" />
         </svg>
-      ),
+      )
     },
     {
       id: 6,
-      title: "Post-Operative Support",
-      description: "Long-term support through support groups, nutritional counseling, and follow-up care to help you maintain your weight loss success for years to come.",
-      extendedInfo: "Your journey doesn't end after surgery. Our comprehensive aftercare program includes regular follow-up appointments, monthly support group meetings, ongoing nutritional counseling, and access to our team of specialists. This continued support is crucial for maintaining weight loss and optimizing your health long-term.",
+      title: 'Gallbladder Surgery',
+      description: 'Minimally invasive removal of the gallbladder to treat gallstones and other gallbladder conditions.',
+      extendedInfo: 'Gallbladder surgery, or cholecystectomy, is performed to remove the gallbladder when it becomes diseased or develops stones. We use laparoscopic techniques to ensure a quick recovery and minimal scarring.',
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
         </svg>
-      ),
+      )
     },
+    {
+      id: 7,
+      title: 'Anti-Reflux Surgery',
+      description: 'Surgical treatment for severe acid reflux and GERD, helping patients find relief from chronic heartburn.',
+      extendedInfo: 'Anti-reflux surgery is designed to treat severe cases of acid reflux and GERD that don't respond to medication. The procedure strengthens the valve between the esophagus and stomach to prevent acid from flowing back up.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+        </svg>
+      )
+    }
   ];
 
   return (
