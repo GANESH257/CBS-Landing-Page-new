@@ -8,7 +8,6 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import SuccessStories from './components/SuccessStories';
 import Appointment from './components/Appointment';
-import Footer from './components/Footer';
 import FloatingActionButton from './components/FloatingActionButton';
 
 export default function Home() {
@@ -23,7 +22,6 @@ export default function Home() {
       <Testimonials />
       <SuccessStories />
       <Appointment isFormOpen={isFormOpen} setIsFormOpen={setIsFormOpen} />
-      <Footer />
       <FloatingActionButton onClick={() => setIsFormOpen(true)} />
     </main>
   );
