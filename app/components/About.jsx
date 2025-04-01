@@ -72,17 +72,14 @@ export default function About() {
                 <div className="space-y-4 sm:space-y-6 md:space-y-3">
                   <h4 className="text-lg sm:text-xl font-semibold text-primary">Dr. Deepu Sudhakaran, MD, FACS</h4>
                   <p className="text-gray-600 italic text-sm sm:text-base">Board Certified Bariatric Surgeon</p>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    As a fellowship-trained bariatric surgeon, Dr. Sudhakaran specializes in advanced weight loss 
-                    procedures including gastric sleeve, gastric bypass, and revisional bariatric surgery.
+                  <p className="text-gray-600 mb-6">
+                    Dr. Deepu Sudhakaran is a fellowship-trained specialist in minimally invasive and bariatric surgery, with expertise in advanced weight loss procedures such as gastric sleeve, gastric bypass, and revisional bariatric surgery. In addition to bariatric care, he performs a range of general surgical procedures, including anti-reflux surgery, hernia repair, and gallbladder surgery.
                   </p>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    After completing his General Surgery residency at the University of Miami, Dr. Sudhakaran pursued 
-                    advanced fellowship training in Minimally Invasive and Bariatric Surgery at the Cleveland Clinic Florida.
+                  <p className="text-gray-600 mb-6">
+                    Dr. Sudhakaran completed his General Surgery residency at Louisiana State University before pursuing advanced fellowship training in Minimally Invasive and Bariatric Surgery at the University of South Carolina.
                   </p>
-                  <p className="text-gray-600 text-sm sm:text-base">
-                    With thousands of successful bariatric surgeries performed, Dr. Sudhakaran is committed to 
-                    providing compassionate care and helping patients transform their lives through sustainable weight loss.
+                  <p className="text-gray-600">
+                    With thousands of successful bariatric and general surgeries to his credit, Dr. Sudhakaran is dedicated to delivering compassionate, patient-centered care. He is committed to helping individuals achieve long-term weight loss and improved health through personalized, innovative surgical solutions.
                   </p>
                 </div>
 
