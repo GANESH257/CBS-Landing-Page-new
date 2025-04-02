@@ -19,34 +19,50 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 className="text-2xl font-semibold text-primary mb-6">Why Choose Us</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <svg className="h-6 w-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-gray-600">Specialized focus on bariatric surgery</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg className="h-6 w-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-gray-600">Minimally invasive surgical techniques</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg className="h-6 w-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-gray-600">Comprehensive pre and post-op support</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg className="h-6 w-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-gray-600">Multidisciplinary team approach</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <svg className="h-6 w-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <p className="text-gray-600">Long-term relationship with patients</p>
+              </div>
+            </div>
+          </div>
+
           <div className="relative">
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+            <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
               <img
                 src="/images/about.jpg"
                 alt="Chesterfield Bariatric Surgery"
                 className="object-cover w-full h-full"
               />
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-primary">Our Mission</h3>
-              <p className="text-gray-600">
-                We strive to provide exceptional bariatric care with a focus on patient safety, 
-                comfort, and long-term success. Our team is committed to supporting you throughout 
-                your weight loss journey.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-primary">Our Approach</h3>
-              <p className="text-gray-600">
-                We believe in a comprehensive approach to weight loss surgery, combining surgical 
-                expertise with personalized care plans and ongoing support to help you achieve 
-                lasting results.
-              </p>
             </div>
           </div>
         </div>
