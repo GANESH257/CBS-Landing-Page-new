@@ -8,7 +8,13 @@ export default function Hero() {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
-    <section className="relative bg-primary text-white py-20 md:py-32">
+    <section className="relative bg-primary text-white py-20 md:py-32 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-dark to-primary animate-gradient-x"></div>
+        <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10 animate-pulse"></div>
+      </div>
+
       <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Column - Text Content */}
