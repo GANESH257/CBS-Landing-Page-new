@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
+import WhyChooseUs from './components/WhyChooseUs';
+import Meet from './components/Meet';
 import Testimonials from './components/Testimonials';
 import SuccessStories from './components/SuccessStories';
 import Appointment from './components/Appointment';
@@ -17,8 +19,10 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Services />
       <About />
+      <WhyChooseUs />
+      <Meet />
+      <Services />
       <Testimonials />
       <SuccessStories />
       <Appointment isFormOpen={isFormOpen} setIsFormOpen={setIsFormOpen} />
