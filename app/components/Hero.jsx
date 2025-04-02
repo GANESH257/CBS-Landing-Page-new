@@ -12,14 +12,14 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Column - Text Content */}
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <div className="text-center md:text-left animate-fade-in">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-slide-up">
               Weight Loss Surgery in Chesterfield
             </h1>
-            <p className="text-lg md:text-xl mb-8">
+            <p className="text-lg md:text-xl mb-8 animate-slide-up delay-100">
               Chesterfield Bariatric Surgery provides expert weight loss solutions including gastric sleeve, gastric bypass, and non-surgical options with personalized care for lasting results.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 animate-slide-up delay-200">
               <button
                 onClick={() => setIsFormOpen(true)}
                 className="btn-primary bg-accent text-dark hover:bg-opacity-90"
@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column - Image */}
-          <div className="relative h-[400px] md:h-[500px]">
+          <div className="relative h-[400px] md:h-[500px] animate-fade-in-right">
             <img
               src="/images/deepu.png" 
               alt="Weight Loss Surgery" 
@@ -45,8 +45,8 @@ export default function Hero() {
 
       {/* Contact Form Modal */}
       {isFormOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-slide-up">
             <div className="p-6">
               <div className="flex justify-between items-center mb-6">
                 <h3 className="text-2xl font-semibold text-primary">Schedule Consultation</h3>
