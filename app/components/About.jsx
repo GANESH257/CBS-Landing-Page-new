@@ -3,10 +3,13 @@ import HeroBackground from './HeroBackground';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactForm from './ContactForm';
+import { useState } from 'react';
 
 export default function About() {
   const leftRef = useScrollAnimation('left');
   const rightRef = useScrollAnimation('right');
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   return (
     <section id="about" className="py-16 relative overflow-hidden bg-primary text-white">
@@ -77,14 +80,12 @@ export default function About() {
             </div>
 
             <div className="flex justify-center md:justify-start">
-              <a 
-                href="https://healow.com/apps/practice/physician-services-consulting-llc-saint-louis-mo-28777?v=2&t=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => setIsFormOpen(true)}
                 className="inline-block px-8 py-4 md:px-6 md:py-3 bg-accent text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 text-sm sm:text-base"
               >
                 Schedule a Consultation
-              </a>
+              </button>
             </div>
           </motion.div>
 
@@ -124,6 +125,28 @@ export default function About() {
           </motion.div>
         </div>
       </div>
+
+      {/* Modal */}
+      {isFormOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="text-2xl font-semibold text-primary">Schedule Consultation</h3>
+                <button
+                  onClick={() => setIsFormOpen(false)}
+                  className="text-gray-400 hover:text-gray-500"
+                >
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 } 
