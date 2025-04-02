@@ -39,6 +39,43 @@ export default function About() {
                 providing support before, during, and long after your weight loss procedure.
               </p>
             </div>
+
+            <div className="mt-8 pt-8 border-t border-white/20">
+              <h4 className="text-lg font-semibold text-white mb-4">Why Choose Us</h4>
+              <ul className="space-y-3 text-white/90 text-sm sm:text-base list-none">
+                <li className="flex items-start">
+                  <svg className="h-6 w-6 text-accent mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Specialized focus on bariatric surgery</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-6 w-6 text-accent mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Minimally invasive surgical techniques</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-6 w-6 text-accent mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Comprehensive pre and post-op support</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-6 w-6 text-accent mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Multidisciplinary team approach</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="h-6 w-6 text-accent mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>Long-term relationship with patients</span>
+                </li>
+              </ul>
+            </div>
+
             <div className="flex justify-center md:justify-start">
               <a 
                 href="https://healow.com/apps/practice/physician-services-consulting-llc-saint-louis-mo-28777?v=2&t=1"
@@ -81,42 +118,6 @@ export default function About() {
                   <p className="text-gray-600">
                     With thousands of successful bariatric and general surgeries to his credit, Dr. Sudhakaran is dedicated to delivering compassionate, patient-centered care. He is committed to helping individuals achieve long-term weight loss and improved health through personalized, innovative surgical solutions.
                   </p>
-                </div>
-
-                <div className="mt-8 pt-8 md:mt-6 md:pt-6 border-t border-gray-200">
-                  <h4 className="text-lg font-semibold text-primary mb-4 md:mb-3">Why Choose Us</h4>
-                  <ul className="text-gray-600 space-y-3 md:space-y-2 text-sm sm:text-base list-none">
-                    <li className="flex items-start">
-                      <svg className="h-6 w-6 text-primary mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Specialized focus on bariatric surgery</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="h-6 w-6 text-primary mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Minimally invasive surgical techniques</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="h-6 w-6 text-primary mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Comprehensive pre and post-op support</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="h-6 w-6 text-primary mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Multidisciplinary team approach</span>
-                    </li>
-                    <li className="flex items-start">
-                      <svg className="h-6 w-6 text-primary mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span>Long-term relationship with patients</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
