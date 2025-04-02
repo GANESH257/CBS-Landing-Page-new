@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactForm from './ContactForm';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,14 +81,12 @@ export default function Navbar() {
               </a>
             </Link>
             <div className="flex items-center space-x-4">
-              <a 
-                href="https://healow.com/apps/practice/physician-services-consulting-llc-saint-louis-mo-28777?v=2&t=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => setIsFormOpen(true)}
                 className="btn-primary bg-accent text-white hover:bg-opacity-90"
               >
                 Request Appointment
-              </a>
+              </button>
               <a
                 href="tel:+13145002424"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
@@ -124,15 +124,15 @@ export default function Navbar() {
               </a>
             </Link>
             <div className="flex flex-col space-y-2">
-              <a 
-                href="https://healow.com/apps/practice/physician-services-consulting-llc-saint-louis-mo-28777?v=2&t=1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => {
+                  setIsFormOpen(true);
+                  setIsOpen(false);
+                }}
                 className="btn-primary bg-accent text-white hover:bg-opacity-90 text-center"
-                onClick={() => setIsOpen(false)}
               >
                 Request Appointment
-              </a>
+              </button>
               <a
                 href="tel:+13145002424"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
@@ -147,6 +147,28 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* Contact Form Modal */}
+      {isFormOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="text-2xl font-semibold text-primary">Schedule Consultation</h3>
+                <button
+                  onClick={() => setIsFormOpen(false)}
+                  className="text-gray-400 hover:text-gray-500"
+                >
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <ContactForm />
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
