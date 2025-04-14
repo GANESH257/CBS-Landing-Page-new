@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
-  output: 'standalone',
   images: {
     unoptimized: true,
     domains: ['cbsurgery.com'],
@@ -14,8 +13,8 @@ const nextConfig = {
   // Add debugging information
   poweredByHeader: false,
   compress: true,
-  // Ensure static files are served correctly
-  distDir: 'out',
+  // Remove distDir as it's not needed for Vercel
+  // distDir: 'out',
 }
 
 module.exports = nextConfig 
