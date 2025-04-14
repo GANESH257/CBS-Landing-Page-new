@@ -26,11 +26,11 @@ export default function Navbar() {
           <Link href="/" legacyBehavior>
             <a className="flex items-center">
               <img
-                src={process.env.NODE_ENV === 'production' ? '/landingpage/images/logo.svg' : '/images/logo.svg'}
+                src="/images/logo.svg"
                 alt="CBS Logo"
                 width={180}
                 height={60}
-                className="h-14 w-auto"
+                className="h-8 w-auto"
               />
             </a>
           </Link>

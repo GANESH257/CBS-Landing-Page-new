@@ -55,9 +55,9 @@ export default function Hero() {
           {/* Right Column - Image */}
           <div className="relative h-[400px] md:h-[500px]">
             <img
-              src={process.env.NODE_ENV === 'production' ? '/landingpage/images/deepu.png' : '/images/deepu.png'}
-              alt="Weight Loss Surgery"
-              className="w-full h-full object-cover rounded-lg shadow-xl"
+              src="/images/deepu.png"
+              alt="Dr. Deepu Sudhakaran"
+              className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
         </div>

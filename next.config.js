@@ -3,12 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
-  output: process.env.NODE_ENV === 'production' ? 'export' : 'standalone',
-  basePath: process.env.NODE_ENV === 'production' ? '/landingpage' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/landingpage/' : '',
+  output: 'standalone',
   images: {
     unoptimized: true,
-    path: process.env.NODE_ENV === 'production' ? '/landingpage/_next/image' : '/_next/image',
     domains: ['cbsurgery.com'],
     loader: 'default',
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

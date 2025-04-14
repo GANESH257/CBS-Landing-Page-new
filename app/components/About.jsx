@@ -108,9 +108,9 @@ export default function About() {
             <div className="flex flex-col items-center md:items-start px-6 sm:px-10 md:px-4 lg:px-6">
               <div className="relative h-[400px] md:h-[500px]">
                 <img
-                  src={process.env.NODE_ENV === 'production' ? '/landingpage/images/deepu2.png' : '/images/deepu2.png'}
+                  src="/images/deepu2.png"
                   alt="Dr. Deepu Sudhakaran"
-                  className="w-full h-full object-cover rounded-lg shadow-xl"
+                  className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>
 
