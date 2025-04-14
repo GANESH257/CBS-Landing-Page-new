@@ -12,30 +12,51 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Column - Text Content */}
           <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Weight Loss Surgery in Chesterfield
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 text-center md:text-left leading-tight">
+              Weight Loss Surgery and
+              <br className="hidden md:block" />
+              General Surgery in
+              <br className="hidden md:block" />
+              St Louis and Chesterfield
             </h1>
             <p className="text-lg md:text-xl mb-8">
-              Chesterfield Bariatric Surgery provides expert weight loss solutions including gastric sleeve, gastric bypass, and non-surgical options with personalized care for lasting results.
+              Chesterfield Bariatric and General Surgery specializes in bariatric and general surgery, utilizing advanced robotic techniques to provide precise, minimally invasive care with personalized solutions for long-term weight loss and overall health.
             </p>
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-              <button 
+              <button
                 onClick={() => setIsFormOpen(true)}
                 className="btn-primary bg-accent text-dark hover:bg-opacity-90"
               >
                 Request an Appointment
               </button>
-              <a href="#services" className="btn-secondary bg-white text-primary hover:bg-opacity-90">
-                Our Weight Loss Solutions
-              </a>
+              <button
+                onClick={() => {
+                  const servicesSection = document.getElementById('services');
+                  const insuranceBanner = servicesSection.querySelector('.mb-12');
+                  insuranceBanner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                className="btn-secondary bg-white text-primary hover:bg-opacity-90"
+              >
+                Weight Loss Solutions
+              </button>
+              <button
+                onClick={() => {
+                  const servicesSection = document.getElementById('services');
+                  const insuranceBanner = servicesSection.querySelector('.my-8');
+                  insuranceBanner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                className="btn-secondary bg-white text-primary hover:bg-opacity-90"
+              >
+                General Surgery Solutions
+              </button>
             </div>
           </div>
 
           {/* Right Column - Image */}
           <div className="relative h-[400px] md:h-[500px]">
             <img
-              src="/images/deepu.png" 
-              alt="Weight Loss Surgery" 
+              src={process.env.NODE_ENV === 'production' ? '/landingpage/images/deepu.png' : '/images/deepu.png'}
+              alt="Weight Loss Surgery"
               className="w-full h-full object-cover rounded-lg shadow-xl"
             />
           </div>

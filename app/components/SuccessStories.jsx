@@ -37,7 +37,7 @@ export default function SuccessStories() {
             <SwiperSlide key={index}>
               <div className="relative group h-[500px]">
                 <img
-                  src={`/images/ss/ss${index + 1}.png`}
+                  src={process.env.NODE_ENV === 'production' ? `/landingpage/images/ss/ss${index + 1}.png` : `/images/ss/ss${index + 1}.png`}
                   alt={`Success Story ${index + 1}`}
                   className="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />

@@ -27,7 +27,7 @@ export default function ContactForm() {
     setStatus({ type: '', message: '' });
 
     try {
-      const response = await fetch('https://cbsurgery.com/api/contact.php', {
+      const response = await fetch('https://cbsurgery.com/landingpage/send_email.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-black"
         />
       </div>
 
@@ -90,7 +90,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-black"
         />
       </div>
 
@@ -105,7 +105,7 @@ export default function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-black"
         />
       </div>
 
@@ -119,7 +119,7 @@ export default function ContactForm() {
           value={formData.service}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-black"
         >
           <option value="">Select a service</option>
           <option value="Gastric Sleeve Surgery">Gastric Sleeve Surgery</option>
@@ -143,7 +143,7 @@ export default function ContactForm() {
           onChange={handleChange}
           rows={4}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-black"
         />
       </div>
 

@@ -25,13 +25,12 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" legacyBehavior>
             <a className="flex items-center">
-              <Image
-                src="/images/logo.svg"
+              <img
+                src={process.env.NODE_ENV === 'production' ? '/landingpage/images/logo.svg' : '/images/logo.svg'}
                 alt="CBS Logo"
                 width={180}
                 height={60}
                 className="h-14 w-auto"
-                priority
               />
             </a>
           </Link>
